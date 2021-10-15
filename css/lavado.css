@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 :root {
-    --main-color: #ef7819;
+    --main-color: #fff700;
     --black: #141215;
 }
 
@@ -60,7 +60,7 @@ section {
     margin-top: 1rem;
     display: inline-block;
     padding: .8rem 3rem;
-    font-size: 1.7rem;
+    font-size: 2.7rem;
     background: #fff;
     font-weight: 500;
     color: var(--black);
@@ -87,7 +87,7 @@ section {
 }
 
 .header .logo {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     color: #fff;
     font-weight: bolder;
 }
@@ -109,7 +109,7 @@ section {
 }
 
 .header .navbar a {
-    font-size: 1.7rem;
+    font-size: 2.7rem;
     color: #fff;
     margin: 0 1rem;
 }
@@ -252,7 +252,7 @@ section {
 }
 
 .products .products-slider .box .image {
-    height: 40rem;
+    height: 80vh;
     width: 100%;
     overflow: hidden;
 }
@@ -327,16 +327,17 @@ section {
 .about .content {
     padding: 13rem 0;
     max-width: 50rem;
+    height: 100vh;
 }
 
 .about .content h3 {
-    font-size: 3rem;
+    font-size: 7rem;
     color: var(--main-color);
 }
 
 .about .content p {
-    font-size: 1.5rem;
-    color: #fff;
+    font-size: 3.5rem;
+    color: black;
     line-height: 2;
     padding: 1rem 0;
 }
@@ -345,18 +346,21 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
+    height: 100vh;
 }
 
 .arrivals .box-container .box {
     position: relative;
     text-align: center;
     overflow: hidden;
+    
 }
 
 .arrivals .box-container .box .image {
-    height: 40rem;
+    height: 60rem;
     width: 100%;
     overflow: hidden;
+  
 }
 
 .arrivals .box-container .box .image img {
@@ -406,6 +410,12 @@ section {
     font-weight: normal;
     color: #fff;
 }
+.arrivals .box-container .box .content  p {
+    font-size: 2.5rem;
+    font-weight: normal;
+    color: #fff;
+    text-align: justify;
+}
 
 .arrivals .box-container .box .content .price {
     font-size: 2rem;
@@ -420,43 +430,9 @@ section {
     text-decoration: line-through;
 }
 
-.contact .row {
-    display: flex;
-    flex-wrap: wrap;
-}
 
-.contact .row .map {
-    flex: 1 1 42rem;
-    width: 100%;
-}
 
-.contact .row form {
-    flex: 1 1 42rem;
-    padding: 2rem;
-    text-align: center;
-    background: #222;
-}
 
-.contact .row form h3 {
-    font-size: 3rem;
-    padding-bottom: 1rem;
-    color: var(--main-color);
-}
-
-.contact .row form .box {
-    width: 100%;
-    padding: 1rem 1.2rem;
-    background: var(--black);
-    color: #fff;
-    font-size: 1.6rem;
-    text-transform: none;
-    margin: .7rem 0;
-}
-
-.contact .row form textarea {
-    height: 15rem;
-    resize: none;
-}
 
 .blogs .box-container {
     display: grid;
@@ -517,6 +493,114 @@ section {
 
 .blogs .box-container .box .content .icons a i {
     padding-right: .5rem;
+}
+
+
+
+
+
+
+
+.interior .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    height: 100vh;
+}
+
+.interior .box-container .box .image {
+    height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.interior .box-container .box .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.interior .box-container .box:hover .image img {
+    transform: scale(1.2);
+}
+
+.interior .box-container .box .content {
+    padding: 2rem;
+    background: #222;
+}
+
+.interior .box-container .box .content h3 {
+    font-size: 2.5rem;
+    color: var(--main-color);
+    line-height: 1.8;
+}
+
+.interior .box-container .box .content p {
+    font-size: 1.5rem;
+    color: #fff;
+    line-height: 2;
+}
+
+.interior .box-container .box .content .icons {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: .1rem solid #fff3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.interior .box-container .box .content .icons a {
+    font-size: 1.4rem;
+    color: var(--main-color);
+}
+
+.interior .box-container .box .content .icons a:hover {
+    color: #fff;
+}
+
+.interior .box-container .box .content .icons a i {
+    padding-right: .5rem;
+}
+
+.contact .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact .row .map {
+    flex: 1 1 60rem;
+    width: 100%;
+   
+}
+
+.contact .row form {
+    flex: 1 1 42rem;
+    padding: 2rem;
+    text-align: center;
+    background: #222;
+    margin: 0rem 10rem;
+}
+
+.contact .row form h3 {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    color: var(--main-color);
+}
+
+.contact .row form .box {
+    width: 100%;
+    padding: 1rem 1.2rem;
+    background: var(--black);
+    color: #fff;
+    font-size: 1.6rem;
+    text-transform: none;
+    margin: .7rem 0;
+}
+
+.contact .row form textarea {
+    height: 15rem;
+    resize: none;
 }
 
 .footer {
